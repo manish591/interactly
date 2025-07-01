@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export function Header() {
   return (
-    <header className="h-16 flex border-b border-muted rounded-t-[1rem]">
-      <nav className="max-w-[1300px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+    <header className="sticky top-0 z-20 h-16 flex border-b border-muted rounded-t-[1rem] bg-background">
+      <nav className="max-w-[1200px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-12">
           <AppLogo />
           <div className="mt-1 text-sm text-foreground/60 flex items-center gap-6">

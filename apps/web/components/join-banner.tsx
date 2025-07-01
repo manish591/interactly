@@ -4,7 +4,7 @@ import { X } from 'lucide-react';
 
 export function JoinBanner() {
   return (
-    <div className="sticky top-0 py-4 bg-muted flex items-center justify-center">
+    <div className="py-4 relative bg-muted flex items-center justify-center">
       <div className="flex items-center gap-4 text-sm">
         <p>Enter code to join a live interactly</p>
         <Input
