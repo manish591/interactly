@@ -16,27 +16,28 @@ import {
 import { Button } from '@workspace/ui/components/button';
 import { Card, CardContent } from '@workspace/ui/components/card';
 import { Header } from '@/components/header';
-import { JoinBanner } from '@/components/join-banner';
 import { Footer } from '@/components/footer';
 
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
-      <JoinBanner />
       <Header />
       <main className="flex-1">
         {/* hero section */}
         <section
           id="#hero"
-          className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-28 space-y-4"
+          className="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-28 space-y-4"
         >
-          <h1 className="text-6xl font-bold leading-16">
-            Make Every Voice Count <br></br>
+          <h1 className="text-6xl font-bold leading-[70px]">
+            Engage Your Audience.
+            <br />
+            Run Live Polls & Quizzes.
+            <br />
             <span className="inline-block px-4 text-primary font-semibold">
-              In Every Single Session
+              Get Results Instantly.
             </span>
           </h1>
-          <p className="text-xl max-w-2xl mx-auto text-foreground/70">
+          <p className="text-xl max-w-3xl mx-auto text-foreground/70">
             Make your sessions more human. With real-time questions, reactions,
             and polls, Interactly gives everyone a way to be seen, heard, and
             involved — instantly.

@@ -1,8 +1,14 @@
+'use client';
+
 import { X } from 'lucide-react';
 import { Button } from '@workspace/ui/components/button';
 import { Input } from '@workspace/ui/components/input';
 
-export function JoinBanner() {
+export function JoinBanner({
+  setOpen,
+}: Readonly<{
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}>) {
   return (
     <div className="py-4 relative bg-muted flex items-center justify-center">
       <div className="flex items-center gap-4 text-sm">
@@ -17,7 +23,13 @@ export function JoinBanner() {
         </Button>
       </div>
       <div className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">
-        <Button variant="ghost" size="icon">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
           <X />
         </Button>
       </div>
