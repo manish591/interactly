@@ -5,23 +5,19 @@ import {
   Circle,
   CircleCheckBig,
   Cloud,
-  Github,
-  Globe,
   HelpCircle,
-  Linkedin,
   MessageCircle,
   Palette,
   PenTool,
   Share2,
-  Smartphone,
   SquarePen,
-  Twitter,
   Zap,
 } from 'lucide-react';
-import { Header } from '@/components/header';
-import { JoinBanner } from '@/components/join-banner';
 import { Button } from '@workspace/ui/components/button';
 import { Card, CardContent } from '@workspace/ui/components/card';
+import { Header } from '@/components/header';
+import { JoinBanner } from '@/components/join-banner';
+import { Footer } from '@/components/footer';
 
 export default function Page() {
   return (
@@ -318,101 +314,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white py-16 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-4 gap-8">
-              <div className="col-span-2">
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">I</span>
-                  </div>
-                  <span className="text-xl font-bold">Interactly</span>
-                </div>
-                <p className="text-gray-400 mb-6 max-w-md">
-                  Transform boring presentations into engaging experiences.
-                  Create interactive sessions that captivate your audience.
-                </p>
-                <div className="flex space-x-4">
-                  <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
-                    <Twitter className="w-5 h-5" />
-                  </div>
-                  <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
-                    <Linkedin className="w-5 h-5" />
-                  </div>
-                  <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
-                    <Github className="w-5 h-5" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-4">Product</h3>
-                <ul className="space-y-2 text-gray-400">
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Features
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Templates
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Pricing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      API
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-4">Support</h3>
-                <ul className="space-y-2 text-gray-400">
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Help Center
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Contact Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white transition-colors">
-                      Terms of Service
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">
-                © 2024 Interactly. All rights reserved.
-              </p>
-              <div className="flex items-center space-x-6 mt-4 md:mt-0">
-                <div className="flex items-center space-x-2 text-gray-400 text-sm">
-                  <Globe className="w-4 h-4" />
-                  <span>Available worldwide</span>
-                </div>
-                <div className="flex items-center space-x-2 text-gray-400 text-sm">
-                  <Smartphone className="w-4 h-4" />
-                  <span>Mobile friendly</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   );

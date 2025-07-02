@@ -1,6 +1,6 @@
-import AppLogo from '@/components/logo';
-import { Button } from '@workspace/ui/components/button';
 import Link from 'next/link';
+import { Button } from '@workspace/ui/components/button';
+import { AppLogo } from '@/components/app-logo';
 
 export function Header() {
   return (
