@@ -1,16 +1,11 @@
-import { Geist, Geist_Mono } from 'next/font/google';
-
 import '@workspace/ui/globals.css';
+import { Sora } from 'next/font/google';
 import { Providers } from '@/components/providers';
 
-const fontSans = Geist({
+const font = Sora({
   subsets: ['latin'],
-  variable: '--font-sans',
-});
-
-const fontMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
+  display: 'swap',
+  weight: ['800', '700', '600', '500', '400'],
 });
 
 export default function RootLayout({
@@ -20,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased `}
-      >
+      <body className={`${font.className} font-sans antialiased`}>
         <Providers>{children}</Providers>
       </body>
     </html>
